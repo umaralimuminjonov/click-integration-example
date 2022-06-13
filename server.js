@@ -17,4 +17,6 @@ app.use("/api", routes);
 
 app.use(errorHandler);
 
+require("./config/database");
+
 app.listen(PORT, () => console.log(`Server started on the port ${PORT}`));
